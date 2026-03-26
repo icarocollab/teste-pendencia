@@ -1,5 +1,0 @@
-{
-  "name": "Painel de Pendências",
-  "description": "Um painel Kanban para gerenciamento de pendências com status personalizados: Em Análise, Chamado Externo, Chamado IMOC, Aguardando Validação e Concluído.",
-  "requestFramePermissions": []
-}
