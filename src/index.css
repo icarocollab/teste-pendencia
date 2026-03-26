@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #E4E3E0;
+  --ink: #141414;
+  --line: #141414;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.data-row {
+  border-bottom: 1px solid var(--line);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.data-row:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.col-header {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 11px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-value {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+@keyframes slamIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-slam {
+  animation: slamIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
